@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Середньовічна фортеця на пагорбі — Three.js</title>
+    <meta name="description" content="Інтерактивна 3D-сцена: фортеця на пагорбі. Three.js, cannon-es, власні GLSL-шейдери.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ctext y=%2752%27 font-size=%2752%27%3E%F0%9F%8F%B0%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+
+    <div id="loader">
+        <div class="loader-card">
+            <h1>Фортеця на пагорбі</h1>
+            <p class="sub">Three.js · cannon-es · власні шейдери</p>
+            <div class="bar"><div class="fill" id="loader-fill"></div></div>
+            <p class="status" id="loader-status">Завантаження текстур і моделей…</p>
+        </div>
+    </div>
+
+    <div id="hud" class="hidden">
+        <div class="panel top-left">
+            <strong>Фортеця на пагорбі</strong>
+            <span id="stats">— fps</span>
+            <small>ЛКМ — обертати · ПКМ — рух · колесо — масштаб</small>
+        </div>
+        <div class="toolbar" id="toolbar">
+            <button data-view="overview" title="Клавіша 1">🔭 Огляд</button>
+            <button data-view="gate" title="Клавіша 2">🚪 Брама</button>
+            <button data-view="court" title="Клавіша 3">🏰 Двір</button>
+            <button data-view="siege" title="Клавіша 4">⚔ Облога</button>
+            <button data-action="cinematic" title="Клавіша C">🎬 Кіно</button>
+            <span class="sep"></span>
+            <button data-action="bridge" title="Клавіша B">⬇ Міст</button>
+            <button data-action="portcullis" title="Клавіша G">⛓ Решітка</button>
+            <button data-action="trebuchet" title="Клавіша T">🪨 Требушет</button>
+            <button data-action="cannon" title="Клавіша F">💥 Вистріл</button>
+            <button data-action="reset" title="Клавіша R">↺ Скинути</button>
+        </div>
+        <div id="toast"></div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
