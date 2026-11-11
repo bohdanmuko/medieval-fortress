@@ -216,7 +216,7 @@ const updateTimeOfDay = (hour) =>
         wu.uSunColor.value.copy(sun.color).multiplyScalar(useSun ? 1 : 0.15)
         wu.uSkyHorizon.value.copy(scene.fog.color)
         wu.uSkyTop.value.copy(sampleKeys([[-10, '#050914'], [0, '#6a7aa0'], [20, '#5d8fd0']], e, new THREE.Color()))
-        wu.uDeep.value.copy(sampleKeys([[-10, '#02080a'], [10, '#0e2a28']], e, new THREE.Color()))
+        wu.uDeep.value.copy(sampleKeys([[-10, '#03090d'], [10, '#235f69']], e, new THREE.Color()))
         clouds.uniforms.uFog.value.copy(scene.fog.color)
     }
     envDirty = true

@@ -42,7 +42,7 @@ export const createTerrain = (M) =>
     const hole = roundedRectShape(FOOT.hx + MOAT.inner - 0.2, FOOT.hz + MOAT.inner - 0.2, MOAT.inner - 0.2)
     outer.holes.push(hole)
     const waterGeometry = new THREE.ShapeGeometry(outer, 24)
-    waterGeometry.rotateX(Math.PI / 2) // ShapeGeometry лежить у XY; XY → XZ (y вгору)
+    waterGeometry.rotateX(-Math.PI / 2) // ShapeGeometry лежить у XY; XY → XZ (y вгору)
     const waterMaterial = createWaterMaterial(M.tex.waterNormal)
     const water = new THREE.Mesh(waterGeometry, waterMaterial)
     water.position.y = WATER_Y

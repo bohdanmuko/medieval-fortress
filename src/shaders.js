@@ -277,7 +277,7 @@ export const createWaterMaterial = (normalMap) =>
             uSunColor: { value: new THREE.Color('#fff2d6') },
             uSkyTop: { value: new THREE.Color('#5d8fd0') },
             uSkyHorizon: { value: new THREE.Color('#b9cfe6') },
-            uDeep: { value: new THREE.Color('#0e2a28') },
+            uDeep: { value: new THREE.Color('#235f69') },
             uRipple: { value: 0.55 }
         }
     ])
